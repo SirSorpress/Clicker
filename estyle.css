@@ -1,0 +1,181 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 1000;
+   
+}
+
+body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #FFE3B3;
+}
+
+/*-----------navbar-----------*/
+
+nav{
+    display: flex;
+    height: 70px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: #63CAA7;
+}
+
+.navizq{
+    display: flex;
+    align-items:  center;
+}
+
+.navizq a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+}
+
+.iconPage{
+    height: 50px;
+    width: 50px;
+}
+
+.iconUser{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: #26798E;
+}
+
+/*-----------footer-----------*/
+
+footer{
+    display: flex;
+    height: 30px;
+    width: 100%;
+    margin-top: auto;
+    justify-content: center;
+    color: rgb(107, 106, 106);
+}
+
+.linkFooter{
+    position: absolute;
+    display: flex;
+    right: 20px;
+    list-style: none;
+}
+
+.linkFooter li {
+    margin: 0px 10px;
+}
+
+.linkFooter li a{
+    text-decoration: none;
+    color: rgb(107, 106, 106);
+    font-size: small;
+}
+
+/*-----------main-----------*/
+
+.main{
+    display: flex;
+    padding: 20px 5px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 200px; /*modificar esto en responisve desing*/
+}
+
+.clicker{
+    display: flex;
+    width: 60%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+/*btnClicker*/
+    #btnClicker{
+        background-color: transparent;
+        border: none;
+    }
+
+    .iconBtn{
+        width: 30px;
+        height: 35px;
+        opacity: 70%;
+    }
+
+    .iconBtn:hover{
+        opacity: 100%;
+    }
+
+/*more*/
+    .more{
+        display: flex;
+        gap:20px;
+    }
+
+    .moreBtn{
+        width: 100px;
+        height: 40px;
+        background-color: #FFC172;
+        border: 1px solid #cf7806;
+        border-radius:20px;
+    }
+
+    .moreBtn:hover{
+        background-color: rgb(247, 167, 63);
+        border: 1px solid #ff9100;
+    }
+
+
+
+/*showCount*/
+
+    #showCount{
+        font-family: 'Lobster', cursive;
+        font-size: 100px;
+        font-weight: 100;
+    }
+
+    .showContainer{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #26798E;
+        border-radius: 100%;
+        width: 250px;
+        height: 250px;
+    }
+
+/*money*/
+    .money{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 110%;
+        width: 100px;
+        height: 40px;
+        background-color: #63CAA7;
+        border: 1px solid #0a5c41;
+        border-radius:20px;
+    }
+
+/*alert*/
+
+#alertShow{
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 40px;
+    border: 1px solid red;
+    border-radius:20px;
+    background-color: rgb(245, 83, 83);
+    bottom: 160%;
+}
